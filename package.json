@@ -1,5 +1,6 @@
 {
     "name": "portfolio_project",
+    "homepage": "https://kairblarson.github.io/portfolio",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
