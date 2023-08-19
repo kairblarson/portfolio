@@ -19,8 +19,6 @@ const Home = () => {
     const [emailSent, setEmailSent] = useState(false);
     const [popupState, setPopupState] = useState(false);
     const [loading, setLoading] = useState(false);
-    const { REACT_APP_EMAIL_SERVICE_ID, REACT_APP_EMAIL_TEMPLATE_ID } =
-        process.env;
 
     const handleSubmitEmail = () => {
         const nameValid = clientName.trim() != "";
@@ -41,8 +39,8 @@ const Home = () => {
 
         emailjs
             .send(
-                REACT_APP_EMAIL_SERVICE_ID,
-                REACT_APP_EMAIL_TEMPLATE_ID,
+                "service_jflpc1t",
+                "template_8kgh3hj",
                 templateParams
             )
             .then(
