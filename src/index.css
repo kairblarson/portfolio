@@ -256,12 +256,20 @@ strong {
     flex-direction: column;
     width: 100%;
     gap: 2em;
+    align-items: center;
+}
+.mobile-carousel {
+    padding-inline: 7em;
 }
 .img {
     width: clamp(20em, 40vw, 30em);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     object-fit: cover;
+}
+.mobile {
+    height: clamp(15em, 30vw, 20em);
+    width: clamp(7em, 13vw, 9em);
 }
 .pattern {
     background: linear-gradient(
@@ -306,7 +314,7 @@ strong {
     cursor: pointer;
     text-decoration: underline;
 }
-a{
+a {
     color: inherit;
 }
 @media screen and (max-width: 800px) {
@@ -394,7 +402,7 @@ a{
         font-weight: 500;
         font-family: "Rubik", sans-serif;
     }
-    .footer{
+    .footer {
         padding-inline: 2em;
     }
 }

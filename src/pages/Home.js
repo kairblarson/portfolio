@@ -244,7 +244,7 @@ const Home = () => {
                                     />
                                     <a
                                         className="button"
-                                        style={{ width: "8em" }}
+                                        style={{ width: "7em" }}
                                         href="https://socialmediasite-production.up.railway.app/explore"
                                     >
                                         View!
@@ -258,12 +258,14 @@ const Home = () => {
                                     }}
                                 >
                                     <p className="subtext">
-                                        <strong>Termite</strong> is a social
-                                        media webapp that i made based on
-                                        Twitter. The site has all the same
-                                        features as Twitter like posting,
-                                        reposting, commenting, direct messaging,
-                                        dynamic searching, etc.
+                                        <strong>Termite</strong> is my first end
+                                        to end webapp that i made based on
+                                        Twitter optimized for&nbsp;
+                                        <strong>desktop use only.</strong>
+                                        The site has all the same features as
+                                        Twitter like posting, liking, reposting,
+                                        commenting, direct messaging, dynamic
+                                        searching, etc.
                                     </p>
                                     <div className="subgroup">
                                         <div className="tag">JavaScript</div>
@@ -277,6 +279,85 @@ const Home = () => {
                                         <div className="tag">AWS S3</div>
                                         <div className="tag">Railway</div>
                                         <div className="tag">WebSockets</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
+                    <Fade bottom>
+                        <div
+                            className="section"
+                            style={{
+                                boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 50px",
+                            }}
+                        >
+                            <div
+                                style={{ width: "100%", marginBottom: "-3em" }}
+                                className="subheader-container"
+                            >
+                                <a href="https://github.com/expedite-knight/update-me">
+                                    <h3 className="subheader">
+                                        Expedite Knight Mobile App
+                                    </h3>
+                                </a>
+                                <div className="break" />
+                            </div>
+                            <div className="subsection">
+                                <div className="img-carousel">
+                                    <div
+                                        className="img"
+                                        style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            boxShadow: "none",
+                                        }}
+                                    >
+                                        <img
+                                            src="assets/ek_mobile_sc.jpg"
+                                            className="img mobile"
+                                        />
+                                    </div>
+                                    <a
+                                        className="button"
+                                        style={{ width: "7em" }}
+                                        href="https://github.com/expedite-knight/update-me"
+                                    >
+                                        View!
+                                    </a>
+                                </div>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        gap: "3em",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <p className="subtext">
+                                        <strong>
+                                            The Expedite Knight Mobile App
+                                        </strong>
+                                        &nbsp;is the app drivers use to create
+                                        and manage routes via a UI developed
+                                        using React Native. The app&nbsp;
+                                        <strong>
+                                            tracks the drivers location
+                                        </strong>
+                                        &nbsp;and uses the Google Matrix API in
+                                        order to determine when they will arrive
+                                        and update route subscribers via Twilio
+                                        SMS.
+                                    </p>
+                                    <div className="subgroup">
+                                        <div className="tag">React Native</div>
+                                        <div className="tag">JavaScript</div>
+                                        <div className="tag">JWT</div>
+                                        <div className="tag">IOS</div>
+                                        <div className="tag">Android</div>
+                                        <div className="tag">Twilio</div>
+                                        <div className="tag">
+                                            Google Matrix API
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +389,7 @@ const Home = () => {
                                     />
                                     <a
                                         className="button"
-                                        style={{ width: "8em" }}
+                                        style={{ width: "7em" }}
                                         href="https://www.expediteknight.com/home"
                                     >
                                         View!
@@ -328,8 +409,9 @@ const Home = () => {
                                         &nbsp;is not only a site built to gain
                                         information about the company, it allows
                                         customers to get a quote on a potential
-                                        delivery and to track live deliveries
-                                        they might have.
+                                        delivery and to&nbsp;
+                                        <strong>track live deliveries</strong>
+                                        &nbsp;they might have.
                                     </p>
                                     <div className="subgroup">
                                         <div className="tag">TypeScript</div>
@@ -339,7 +421,6 @@ const Home = () => {
                                         <div className="tag">
                                             Google Maps API
                                         </div>
-                                        <div className="tag">JWT</div>
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +452,7 @@ const Home = () => {
                                     />
                                     <a
                                         className="button"
-                                        style={{ width: "8em" }}
+                                        style={{ width: "7em" }}
                                         href="https://github.com/kairblarson/music_matchers"
                                     >
                                         View!
@@ -390,7 +471,8 @@ const Home = () => {
                                         each other. I'm a musician myself and
                                         connecting with other musicians is hard
                                         to do so I developed a Tinder style app
-                                        that allows you to match with others in
+                                        that allows you to&nbsp;
+                                        <strong>match with others</strong> in
                                         your area based on genres of interest
                                         and what instrument you play.
                                     </p>
