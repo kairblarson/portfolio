@@ -152,6 +152,7 @@ code {
     transition: all linear 0.1s;
     box-shadow: rgba(33, 35, 38, 0.7) 0px 10px 10px -10px;
     max-width: 10em;
+    text-align: center;
 }
 .button:hover {
     transform: translateY(5px);
@@ -251,7 +252,10 @@ strong {
     font-weight: 1000;
 }
 .img-carousel {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    gap: 2em;
 }
 .img {
     width: clamp(20em, 40vw, 30em);
@@ -300,6 +304,10 @@ strong {
 }
 .menu-item:hover {
     cursor: pointer;
+    text-decoration: underline;
+}
+a{
+    color: inherit;
 }
 @media screen and (max-width: 800px) {
     .subsection {

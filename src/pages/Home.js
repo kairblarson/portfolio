@@ -166,7 +166,10 @@ const Home = () => {
                                 </div>
                                 <button
                                     className="button"
-                                    style={{ marginBottom: "3em" }}
+                                    style={{
+                                        marginBottom: "3em",
+                                        width: "10em",
+                                    }}
                                     onClick={() => {
                                         const scroll =
                                             contactRef.current.getBoundingClientRect()
@@ -228,7 +231,9 @@ const Home = () => {
                                 style={{ width: "100%", marginBottom: "-3em" }}
                                 className="subheader-container"
                             >
-                                <h3 className="subheader">Termite</h3>
+                                <a href="https://socialmediasite-production.up.railway.app/explore">
+                                    <h3 className="subheader">Termite</h3>
+                                </a>
                                 <div className="break" />
                             </div>
                             <div className="subsection">
@@ -237,6 +242,13 @@ const Home = () => {
                                         src="assets/termite1.png"
                                         className="img"
                                     />
+                                    <a
+                                        className="button"
+                                        style={{ width: "8em" }}
+                                        href="https://socialmediasite-production.up.railway.app/explore"
+                                    >
+                                        View!
+                                    </a>
                                 </div>
                                 <div
                                     style={{
@@ -281,9 +293,11 @@ const Home = () => {
                                 style={{ width: "100%", marginBottom: "-3em" }}
                                 className="subheader-container"
                             >
-                                <h3 className="subheader">
-                                    Expedite Knight Website
-                                </h3>
+                                <a href="https://www.expediteknight.com/home">
+                                    <h3 className="subheader">
+                                        Expedite Knight Website
+                                    </h3>
+                                </a>
                                 <div className="break" />
                             </div>
                             <div className="subsection">
@@ -292,6 +306,13 @@ const Home = () => {
                                         src="assets/ex_web_finder.png"
                                         className="img"
                                     />
+                                    <a
+                                        className="button"
+                                        style={{ width: "8em" }}
+                                        href="https://www.expediteknight.com/home"
+                                    >
+                                        View!
+                                    </a>
                                 </div>
                                 <div
                                     style={{
@@ -304,11 +325,11 @@ const Home = () => {
                                         <strong>
                                             The Expedite Knight website
                                         </strong>
-                                        is not only a site built to gain
-                                        information about the company, it was
-                                        also built for customers to get a quote
-                                        on a potential delivery and to track
-                                        live deliveries they might have.
+                                        &nbsp;is not only a site built to gain
+                                        information about the company, it allows
+                                        customers to get a quote on a potential
+                                        delivery and to track live deliveries
+                                        they might have.
                                     </p>
                                     <div className="subgroup">
                                         <div className="tag">TypeScript</div>
@@ -335,7 +356,11 @@ const Home = () => {
                                 style={{ width: "100%", marginBottom: "-3em" }}
                                 className="subheader-container"
                             >
-                                <h3 className="subheader">Music Matchers</h3>
+                                <a href="https://github.com/kairblarson/music_matchers">
+                                    <h3 className="subheader">
+                                        Music Matchers
+                                    </h3>
+                                </a>
                                 <div className="break" />
                             </div>
                             <div className="subsection">
@@ -344,6 +369,13 @@ const Home = () => {
                                         src="assets/music_matchers.png"
                                         className="img"
                                     />
+                                    <a
+                                        className="button"
+                                        style={{ width: "8em" }}
+                                        href="https://github.com/kairblarson/music_matchers"
+                                    >
+                                        View!
+                                    </a>
                                 </div>
                                 <div
                                     style={{
@@ -358,10 +390,9 @@ const Home = () => {
                                         each other. I'm a musician myself and
                                         connecting with other musicians is hard
                                         to do so I developed a Tinder style app
-                                        that allows you to match with other
-                                        musicians in your area based on genres
-                                        of interest and what instrument you
-                                        play.
+                                        that allows you to match with others in
+                                        your area based on genres of interest
+                                        and what instrument you play.
                                     </p>
                                     <div className="subgroup">
                                         <div className="tag">TypeScript</div>
