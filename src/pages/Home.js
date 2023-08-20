@@ -264,6 +264,7 @@ const Home = () => {
                                         <div className="tag">Framer Motion</div>
                                         <div className="tag">AWS S3</div>
                                         <div className="tag">Railway</div>
+                                        <div className="tag">WebSockets</div>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +289,7 @@ const Home = () => {
                             <div className="subsection">
                                 <div className="img-carousel">
                                     <img
-                                        src="assets/termite1.png"
+                                        src="assets/ex_web_finder.png"
                                         className="img"
                                     />
                                 </div>
@@ -340,7 +341,7 @@ const Home = () => {
                             <div className="subsection">
                                 <div className="img-carousel">
                                     <img
-                                        src="assets/termite1.png"
+                                        src="assets/music_matchers.png"
                                         className="img"
                                     />
                                 </div>
@@ -363,11 +364,13 @@ const Home = () => {
                                         play.
                                     </p>
                                     <div className="subgroup">
-                                        <div className="tag">JavaScript</div>
+                                        <div className="tag">TypeScript</div>
                                         <div className="tag">React</div>
                                         <div className="tag">Framer Motion</div>
                                         <div className="tag">Node</div>
                                         <div className="tag">Express</div>
+                                        <div className="tag">WebSockets</div>
+                                        <div className="tag">AWS S3</div>
                                         <div className="tag">Passportjs</div>
                                         <div className="tag">MongoDB</div>
                                     </div>
