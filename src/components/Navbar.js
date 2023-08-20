@@ -33,10 +33,59 @@ const Navbar = ({ aboutRef, projectsRef, homeRef, contactRef }) => {
                     right: menuState ? "0" : "-1000px",
                 }}
             >
-                <div className="menu-item">HOME</div>
-                <div className="menu-item">ABOUT</div>
-                <div className="menu-item">PROJECTS</div>
-                <div className="menu-item">CONTACT</div>
+                <div
+                    className="menu-item"
+                    onClick={() => {
+                        const scroll =
+                            homeRef.current.getBoundingClientRect().top - 50;
+                        window.scrollTo({
+                            top: scroll,
+                            behavior: "smooth",
+                        });
+                    }}
+                >
+                    HOME
+                </div>
+                <div
+                    className="menu-item"
+                    onClick={() => {
+                        const scroll =
+                            aboutRef.current.getBoundingClientRect().top - 50;
+                        window.scrollTo({
+                            top: scroll,
+                            behavior: "smooth",
+                        });
+                    }}
+                >
+                    ABOUT
+                </div>
+                <div
+                    className="menu-item"
+                    onClick={() => {
+                        const scroll =
+                            projectsRef.current.getBoundingClientRect().top -
+                            50;
+                        window.scrollTo({
+                            top: scroll,
+                            behavior: "smooth",
+                        });
+                    }}
+                >
+                    PROJECTS
+                </div>
+                <div
+                    className="menu-item"
+                    onClick={() => {
+                        const scroll =
+                            contactRef.current.getBoundingClientRect().top - 50;
+                        window.scrollTo({
+                            top: scroll,
+                            behavior: "smooth",
+                        });
+                    }}
+                >
+                    CONTACT
+                </div>
             </div>
             <div className="icon-container">
                 <img
