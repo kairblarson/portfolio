@@ -4,6 +4,13 @@ import { useParallax } from "react-scroll-parallax";
 import Fade from "react-reveal/Fade";
 import Popup from "../components/Popup";
 import ClipLoader from "react-spinners/ClipLoader";
+import {
+    BrowserView,
+    MobileView,
+    isBrowser,
+    isMobile,
+} from "react-device-detect";
+import Footer from "../components/Footer";
 
 const Home = () => {
     const heroParallax = useParallax({ translateY: 50, opacity: [1, 0.8] });
@@ -38,19 +45,15 @@ const Home = () => {
         setLoading(true);
 
         emailjs
-            .send(
-                "service_jflpc1t",
-                "template_8kgh3hj",
-                templateParams
-            )
+            .send("service_jflpc1t", "template_8kgh3hj", templateParams)
             .then(
                 function (response) {
                     setLoading(false);
                     setEmailSent(true);
                     setPopupState(true);
                     setClientEmail("");
-                    setClientMessage("")
-                    setClientName("")
+                    setClientMessage("");
+                    setClientName("");
 
                     setTimeout(() => {
                         setPopupState(false);
@@ -76,7 +79,11 @@ const Home = () => {
                 projectsRef={projectsRef}
                 contactRef={contactRef}
             />
-            <div className="content" ref={homeRef}>
+            <div
+                className="content"
+                ref={homeRef}
+                style={{ width: isMobile ? "100vw" : "calc(100vw - 17px)" }}
+            >
                 <section className="hero">
                     <section className="hero-content" ref={heroParallax.ref}>
                         <h1 className="title">HI, I AM KAI</h1>
@@ -86,8 +93,34 @@ const Home = () => {
                             large enterprises and startups
                         </h2>
                         <div className="home--buttons">
-                            <button className="button">Contact me</button>
-                            <button className="button">Learn more</button>
+                            <button
+                                className="button"
+                                onClick={() => {
+                                    const scroll =
+                                        contactRef.current.getBoundingClientRect()
+                                            .top - 50;
+                                    window.scrollTo({
+                                        top: scroll,
+                                        behavior: "smooth",
+                                    });
+                                }}
+                            >
+                                Contact me
+                            </button>
+                            <button
+                                className="button"
+                                onClick={() => {
+                                    const scroll =
+                                        aboutRef.current.getBoundingClientRect()
+                                            .top - 50;
+                                    window.scrollTo({
+                                        top: scroll,
+                                        behavior: "smooth",
+                                    });
+                                }}
+                            >
+                                Learn more
+                            </button>
                         </div>
                     </section>
                 </section>
@@ -131,7 +164,21 @@ const Home = () => {
                                         exciting projects.
                                     </p>
                                 </div>
-                                <button className="button">Contact</button>
+                                <button
+                                    className="button"
+                                    style={{ marginBottom: "3em" }}
+                                    onClick={() => {
+                                        const scroll =
+                                            contactRef.current.getBoundingClientRect()
+                                                .top + 1100;
+                                        window.scrollTo({
+                                            top: scroll,
+                                            behavior: "smooth",
+                                        });
+                                    }}
+                                >
+                                    Contact
+                                </button>
                             </section>
                             <section className="group">
                                 <h3 className="subheader">My Skills</h3>
@@ -401,7 +448,11 @@ const Home = () => {
                         />
                     </div>
                     <div style={{ width: "100%", textAlign: "end" }}>
-                        <button className="button" onClick={handleSubmitEmail} style={{width: "8em"}}>
+                        <button
+                            className="button"
+                            onClick={handleSubmitEmail}
+                            style={{ width: "8em" }}
+                        >
                             {loading ? (
                                 <ClipLoader
                                     color={"white"}
@@ -422,6 +473,7 @@ const Home = () => {
                         : "Could not send email"}
                 </Popup>
             </section>
+            <Footer />
         </div>
     );
 };
