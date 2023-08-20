@@ -486,6 +486,7 @@ const Home = () => {
                                         <div className="tag">AWS S3</div>
                                         <div className="tag">Passportjs</div>
                                         <div className="tag">MongoDB</div>
+                                        <div className="tag">Stripe API</div>
                                     </div>
                                 </div>
                             </div>
